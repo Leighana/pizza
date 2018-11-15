@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Scholarly Pizza Co.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="https://yarn.pm/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="assets/css/core.css">
+    
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        
+        <section class="ordering">
+            <div class="container">
+            <img href="index.html" class="icon" src="assets/img/white.png">
+            <form method="" action="" name="order_form" class="orderform">
+                
+            <div class="order_pizza">
+                <label for="pizza">Pizza</label>
+                <select id="pizza">
+                    <option value="cheese">Cheese</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="the-hog">The Hog</option>
+                    <option value="veggie">Veggie</option>
+                    <option value="hawaiian">Hawaiian</option>
+                    <option value="supreme">Supreme</option>
+                    <option value="null" selected></option>
+                </select>
+            </div>
+            
+            <div class="order_pizzaqty">
+                <label for="qtyA">QTY</label>
+                <input type="number" name="pizza" id="qtyA" placeholder="0">
+            </div>
+            
+            <div class="order_crust">
+                <label for="crust">Crust</label>
+                <select>
+                    <option value="thick">Thick</option>
+                    <option value="thin">Thin</option>
+                </select>
+            </div>
+            
+            <div class="order_size">
+                    <input type="checkbox" id="small">
+                    <label class="sizes small" for="small">10" Small</label>
+                    <input type="checkbox" id="medium">
+                    <label class="sizes medium" for="medium">13" Medium</label>
+                    <input type="checkbox" id="large">
+                    <label class="sizes large" for="large">15" Large</label>
+            </div>
+            
+            <button class="add_pizza" onclick="myFunction()">+ ITEM</button>
+            
+            <div class="order_drink">
+                <label for="drink">Drink</label>
+                <select id="drink">
+                    <option value="coke">Coke</option>
+                    <option value="diet-coke">Diet Coke</option>
+                    <option value="sprite">Sprite</option>
+                    <option value="dr-pepper">Dr. Pepper</option>
+                    <option value="iced-tea">Iced Tea</option>
+                    <option value="null" selected></option>
+                </select>
+            </div>
+
+            <div class="order_drinkqty">
+                <label for="qtyB">QTY</label>
+                <input type="number" name="drink" id="qtyB" placeholder="0">
+            </div>
+            
+            <button class="add_drink" onclick="myFunction()">+ ITEM</button>
+            
+            <div class="order_side">
+                <label for="sides">Sides</label>
+                <select id="side">
+                    <option value="breadsticks-regular">Breadsticks (regular)</option>
+                    <option value="breadsticks-stuffed">Breadsticks (stuffed)</option>
+                    <option value="house-salad">House Salad</option>
+                    <option value="null" selected></option>
+                </select>
+            </div>
+            
+            <div class="order_sideqty">
+                <label for="qtyC">QTY</label>
+                <input type="number" name="side" id="qtyC" placeholder="0">
+            </div>
+
+            <button class="add_side" onclick="myFunction()">+ ITEM</button>
+
+            <button class="order_sub" type="submit">ORDER NOW</button>
+            </form>
+            </div>
+        </section>
+        
+
+        <footer class="ordernow">
+        </footer>
+        
+        <!-- Javascript -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="assets/js/core.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

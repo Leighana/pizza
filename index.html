@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Scholarly Pizza Co.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="https://yarn.pm/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="assets/css/core.css">
+    
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        
+        <nav class="menu">
+            <div class="container">
+            <img id="logo" class="icon" src="assets/img/white.png" alt="logo">
+            <i class="ham fas fa-bars"  onclick="openNav()"></i>
+            
+            <div id="myNav" class="overlay">
+              <img class="icon" src="assets/img/black.png" alt="overlay">
+              <a class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="menu.html">menu</a>
+                <a href="order.html">order now</a>
+              </div>
+            </div>
+            </div>
+        </nav>
+        
+        <section class="landing">
+            <div class="container">
+                <aside>
+                    <h1>fast.</h1>
+                    <h1>fresh.</h1>
+                    <h1>local.</h1>
+                </aside>
+            </div>
+        </section>
+        
+        <section class="order">
+            <div class="container">
+            <aside>
+                <h2>need a quick bite?</h2>
+                <a href="menu.html" title="Menu"><button class="btn">Menu</button></a>
+                <a href="order.html" title="Order"><button class="btn">Order Now</button></a>
+            </aside>
+            </div>
+        </section>
+        
+        <section class="pizzaofday">
+            <div class="container">
+                <div class="pizza">
+                <article>
+                    <img src="assets/img/pizza/Cheese.png">
+                </article>
+                <aside>
+                    <h3>pizza of the day</h3>
+                    <p>
+                        <small>PIZZA TYPE: CHEESE</small>
+                        <small>mozzarella</small>
+                        <small>feta</small>
+                        <small>cheddar</small>
+                    </p>
+                </aside>
+                </div>
+            </div>
+        </section>
+        
+        <section class="quote">
+            <div class="container">
+            <article>
+                <h3>“Best pizza I've had in Little Rock by far! Crust was perfect and crispy and the cheese was ooey and gooey. Was able to place an order and pick it up promptly. Affordable, tasty, and quick which is great for a college student like me.”</h3>
+                <h4>- Shawn Serrano</h4>
+            </article>
+            </div>
+        </section>
+        
+        <footer id="map" class="map">
+                    <script>
+                        function myMap() {
+                        var mapOptions = {
+                            center: new google.maps.LatLng(34.725410, -92.340536),
+                            zoom: 18,
+                            mapTypeId: google.maps.MapTypeId.HYBRID
+                        }
+                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                        }
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_l1NZ2qQbOSPiWyiKFzOJ3j73H2zIPEw&callback=myMap"></script>
+            <div class="container">
+                <article>
+                    <h6>EIT 547</h6>
+                    <address>2801 South University Ave.<br>
+                    Little Rock, Arkansas<br>
+                    72204</address>
+                </article>
+                </div>
+        </footer>
+        
+        <!-- Javascript -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="assets/js/core.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

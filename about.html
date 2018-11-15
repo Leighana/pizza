@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Scholarly Pizza Co.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="https://yarn.pm/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="assets/css/core.css">
+    
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        
+        <nav class="menu">
+            <div class="container">
+            <img id="logo" class="icon" src="assets/img/white.png">
+            <i class="ham fas fa-bars"  onclick="openNav()"></i>
+            
+            <div id="myNav" class="overlay">
+              <img class="icon" src="assets/img/black.png">
+              <a class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="menu.html">menu</a>
+                <a href="order.html">order now</a>
+              </div>
+            </div>
+            </div>
+        </nav>
+        
+        <!-- put chef bio stuff here -->
+        <section class="about_company">
+            <h1>about us</h1>
+        </section>
+        <section class="about_info">
+            <div class="container">
+                <div class="tab">
+                    <button class="tablinks" onclick="aboutList(event, 'Synopsis')" id="defaultOpen">Company</button> /
+                    <button class="tablinks" onclick="aboutList(event, 'Chef')">The Chef</button> /
+                    <button class="tablinks" onclick="aboutList(event, 'Staff')">Staff</button></button>
+                </div>
+                
+                <div id="Synopsis" class="tabcontent">
+                    <h2>Our Company</h2>
+                    <p>Founded at a local Arkansas university, UALR. Designed to bring delicous and fresh food to the hands of students. Created by two buisness partners Thomas Wallace and Daniel Spillers.</p>
+                    <p>Ingredients are sourced locally and ordered often to ensure the fresh and quick delivery from the time you place an order, to the time you come and pick it up.</p>
+                </div>
+                
+                <div id="Chef" class="tabcontent">
+                    <h2>The Chef</h2>
+                    <p>Name: Donatello Scarsi</p>
+                    <p>Age: 38</p>
+                    <p>Hometown: Pontinia, Italy</p>
+                    <p>Donatello Scarsi first developed culinary skills producing and selling cheese. It was in Naples, however—the birthplace of pizza just an hour away from his hometown—where Scarsi went to study the art and craft of the pizzaiolo. After learning all things Neapolitan, among some of the best pizza makers in the world, Scarsi came to the United States and opened several successful pizzerias before settling in Little Rock Arkansas.</p>
+                </div>
+                
+                <div id="Staff" class="tabcontent">
+                    <h2>The Team</h2>
+                    <p>The two founders have expertise in their own respective fields and work together to keep this well oiled machine rolling.</p>
+                    <hr>
+                    <br>
+                    <h3>Thomas Wallace, <small>Founder, CEO</small></h3>
+                    <p>Focuses on the web and marketing portion of the company. Making sure the web and branding are up to modern standards so that the company stays just as fresh as the ingredients they use!</p>
+                    <br>
+                    <h3>Daniel Spiller, <small>Manager</small></h3>
+                    <p>Focuses on the database and statistics portion of the company. Even though the site and branding may be on point, you still have to make sure the numbers are being calculated!</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer id="map" class="map">
+            <div class="container">
+                <div id="map" style="width:400px;height:400px;background:yellow"></div>
+                    <script>
+                        function myMap() {
+                        var mapOptions = {
+                            center: new google.maps.LatLng(34.725410, -92.340536),
+                            zoom: 18,
+                            mapTypeId: google.maps.MapTypeId.HYBRID
+                        }
+                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                        }
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_l1NZ2qQbOSPiWyiKFzOJ3j73H2zIPEw&callback=myMap"></script>
+                </div>
+            <article>
+                <h6>EIT 547</h6>
+                <address>2801 South University Ave.<br>
+                Little Rock, Arkansas<br>
+                72204</address>
+            </article>
+            </div>
+        </footer>
+        
+        <!-- Javascript -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="assets/js/core.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
